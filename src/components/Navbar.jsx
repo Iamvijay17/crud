@@ -1,0 +1,51 @@
+import React from "react";
+import logo from "./Others/Logo.png"
+
+
+
+const Navbar = () => {
+    return (
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="/">
+                        <img className="me-3"
+                            src={logo}
+                            alt="Student Portal Logo"
+                            width="30"
+                            height="auto"
+                        />
+                        Student Portal
+                    </a>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div className="navbar-nav">
+                            <a className="nav-link active" aria-current="page" href="#">
+                                Home
+                            </a>
+                            <a className="nav-link" href="/create">
+                                Create
+                            </a>
+                            <a className="nav-link" href="/read">
+                                Read
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    );
+};
+
+export default Navbar;
